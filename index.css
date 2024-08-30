@@ -1,0 +1,429 @@
+
+@font-face{
+    font-family: myfont;
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: myfontbold;
+    src: url(./font/Roboto-Bold.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    -moz-animation: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    flex-basis: content;
+}
+
+.navlinks{
+    flex-basis: auto;
+    width: 30%;
+}
+
+.button{
+    flex-basis: auto;
+}
+
+nav .navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+nav .navlinks ul li{
+    list-style-type: none;
+}
+
+nav .navlinks ul li a{
+    text-decoration: none;
+    color: #1C1E53;
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+.button button{
+    width: 130px;
+    height: 50px;
+    color: #5E3BEE;
+    background-color: white;
+    border: 1px solid #5E3BEE;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5.33px;
+    font-family: Roboto;
+}
+
+.home-page{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 3%;    
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #F5FCFF;
+}
+
+.home-page .leftside{
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.greeting{
+    font-family: Roboto;
+    font-size: 21.33px;
+    font-weight: 600;
+    color: #282938;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.product-design{
+    color: #5E3BEE;
+}
+
+.explain{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-side button{
+    width: 170px;
+    height: 69px;
+    font-size: 15px;
+    margin-top: 3%;
+    background-color: #5E3BEE;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    color: white;
+}
+
+.portfolio{
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-right: 8%;
+}
+
+
+.expert{
+    font-size: 50px;
+    font-family: myfont;
+    color: #282938;
+}
+
+.cards{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    width: 20%;
+    padding: 20px;
+    background-color: #F5FCFF;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+
+.cards .image{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    padding: 10px;
+    width: 60px;    
+    font-family: myfontbold;
+    border-radius: 9px;
+}
+
+.cards h1{
+    font-size: 22px;
+    font-family: myfontbold;
+}
+
+.cards:active{
+    border-bottom: 3.5px solid #5E3BEE;
+    transform: translateY(4px); 
+    
+}
+
+.cards:hover{
+    border-bottom: 3.5px solid #5E3BEE;
+    transform: translateY(-12px); 
+    
+}
+
+.cards:first-child{
+    animation: anim 1s ease-in forwards;
+    
+}
+
+.cards:nth-child(2){
+    animation: anim 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+.cards:nth-child(3){
+    animation: anim 1s ease-in forwards;
+    animation-delay: 2s;
+
+}
+
+.cards:nth-child(4){
+    animation: anim 1s ease-in forwards;
+    animation-delay: 3s;
+
+}
+
+
+
+@keyframes anim {
+    0%{
+        margin-top: 0;
+    }
+
+    16%{
+        margin-top: -20px;
+    }
+
+
+    33%{
+        margin-top: -30px;
+    }
+
+
+    50%{
+        margin-top: -60;
+    }
+
+
+    66%{
+        margin-top: -40px;
+    }
+
+
+    82%{
+        margin-top: -20px;
+    }
+
+
+    100%{
+        margin-top: 0;
+    }
+}
+
+
+.flex-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.about-me{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 90%;
+    padding: 50px;
+}
+
+.about-me .aboutmetext{
+    display: table-column;
+    padding-top: 10%;
+}
+
+.about-me .aboutmetext h1{
+    font-family: myfontbold;
+    font-size: 32px;
+}
+
+.about-me .aboutmetext p{
+    font-family: myfont;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.about-me .aboutmeimage{
+    border-radius: 50px;
+}
+
+.project{
+    max-width: 100%;
+}
+
+
+
+.recentprojects{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 40px;
+    margin: 10px;
+}
+
+.recentprojects h1{
+    font-family: myfontbold;
+    font-size: 40px;
+
+}
+
+.recentprojects .visit button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E62872;
+    color: white;
+    text-align: center;
+    height: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: myfont;
+}
+
+
+.recentprojects .visit img{
+    margin: 10px;
+}
+
+
+.projectcards{
+    display: flex;
+}
+
+.pcards{
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    backdrop-filter: blur(13.9px);
+    width: 400px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s all ease, transform 0.3s ease;
+
+}
+
+
+.pcards .words{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: column;
+}
+
+
+
+.pcards:hover{
+    border: 10px solid #F5FCFF;
+    border-radius: 30px;
+    transform: translateY(-12px); 
+    
+}
+
+.form{
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+}
+
+
+.form p{
+    text-align: center;
+}
+
+.form h2{
+    text-align: center;
+}
+
+
+.Names .name{
+    width: 369px;
+    height: 34px;
+    border: 1px solid #5E3BEE;
+    border-radius: 3px;
+    margin-right: 20px;
+    padding: 5px;
+
+}
+
+
+.contacts .contact{
+    width: 369px;
+    height: 34px;
+    margin-top: 4%;
+    margin-right: 20px;
+    border: 1px solid #5E3BEE;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+select{
+    width: 787px;
+    margin-top: 4%;
+    height: 48px;
+    border: 1px solid #5E3BEE;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+
+textarea{
+    width: 800px;
+    border: 1px solid #5E3BEE;
+    height: 180px;
+    margin-top: 4%;
+
+}
+
+.submitb {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #5E3BEE;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 150px;
+    height: 55px;
+    margin-top: 2%;
+    border-radius: 6px;
+
+}
+
+.submitbutton{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: all ease 0.1s;
+}
